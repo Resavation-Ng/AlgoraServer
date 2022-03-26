@@ -88,6 +88,6 @@ response:
 ```
 
 e.g
-localhost:8080/rtc/test/publisher/uid/1
-localhost:8080/rtc/test/publisher/uid/1?expiry=1000
-localhost:8080/rtc/test/subscriber/userAccount/ekaansh
+https://agora-tokens-server.herokuapp.com/rtc/test/publisher/uid/1
+https://agora-tokens-server.herokuapp.com/rtc/test/publisher/uid/1?expiry=1000
+https://agora-tokens-server.herokuapp.com/rtc/test/subscriber/userAccount/ekaansh
