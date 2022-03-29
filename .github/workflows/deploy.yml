@@ -1,6 +1,6 @@
 ### Deploy to Heroku
    
-name: Node.js CI
+name: Deploy to Heroku
 
 on:
   push:
