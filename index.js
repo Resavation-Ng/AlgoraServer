@@ -175,6 +175,24 @@ app.get("/rtc/:channel/:role/:tokentype/:uid", nocache, generateRTCToken);
 app.get("/rtm/:uid/", nocache, generateRTMToken);
 app.get("/rte/:channel/:role/:tokentype/:uid", nocache, generateRTEToken);
 
+app.post("/passbase-webhooks", (req, res) => {
+  processWebhook(req);
+  res.status(200).send("Success");
+});
+
+const processWebhook = (request) => {
+  switch (request.event) {
+    case "VERIFICATION_COMPLETED":
+      // Do logic here for VERIFICATION_COMPLETED event
+      break;
+    case "VERIFICATION_REVIEWED":
+      // Do logic here for VERIFICATION_REVIEWED event
+      break;
+    default:
+      console.log("Couldn't process webhook event");
+  }
+};
+
 app.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`);
 });

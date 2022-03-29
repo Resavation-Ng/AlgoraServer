@@ -9,3 +9,7 @@ Content-Type: application/json
 ###
 GET http://localhost:8080/testing
 Content-Type: application/json
+
+###
+POST http://localhost:5000/passbase-webhooks
+Content-Type: application/json
